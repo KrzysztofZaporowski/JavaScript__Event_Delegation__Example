@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/Karla-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400 700;
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --font-size: 16px;
+  --color-primary: #4f46e5;
+  --color-secondary: #3b82f6;
+  --color-background: #f3f4f6;
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #082024;
+  --box-color: #56c579;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px 45px;
+  background-color: var(--color-background);
+  border-radius: 8px;
+  width: 90%;
+}
+
+header button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+.box-area {
+  border: 2px dashed var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 12px;
+  margin-top: 20px;
+  min-height: 560px;
+  width: 90%;
+}
+
+.box {
+  align-items: center;
+  background-color: var(--box-color);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 150px;
+  padding: 20px;
+  width: 150px;
+}
